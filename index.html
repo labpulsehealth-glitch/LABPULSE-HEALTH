@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>LabPulse Health</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Welcome to LabPulse Health</h1>
+<p class="tagline">Your Digital Health Companion</p>
+</header>
+
+<nav>
+<button onclick="showSection('home')">Home</button>
+<button onclick="showSection('labs')">Find Labs</button>
+<button onclick="showSection('upload')">Upload Result</button>
+<button onclick="showSection('records')">My Records</button>
+</nav>
+
+<section id="home" class="page">
+<h2></h2>
+<p class="home-text">Find laboratories, compare test prices, and store your health results safely.</p>
+</section>
+
+<section id="labs" class="page">
+<h2>Find Labs</h2>
+
+<input type="text" id="searchInput" placeholder="Search lab or test">
+
+<button onclick="findLabs()">Search</button>
+
+<div id="labResults"></div>
+
+</section>
+
+<section id="upload" class="page">
+
+<h2>Upload Lab Result</h2>
+
+<input type="file" id="fileUpload">
+
+<button onclick="uploadReport()">Upload</button>
+
+<p id="uploadMessage"></p>
+
+</section>
+
+<section id="records" class="page">
+
+<h2>My Records</h2>
+
+<ul id="recordList"></ul>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
