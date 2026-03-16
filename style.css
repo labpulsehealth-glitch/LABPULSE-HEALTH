@@ -113,3 +113,43 @@ padding:12px 20px;
 border-radius:6px;
 cursor:pointer;
 }
+.equipment-section{
+margin-top:40px;
+text-align:center;
+}
+
+.equipment-section h2{
+color:#004c4c;
+margin-bottom:20px;
+}
+
+.equipment-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:20px;
+max-width:800px;
+margin:auto;
+}
+
+.equipment-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+transition:transform 0.3s;
+}
+
+.equipment-card:hover{
+transform:translateY(-5px);
+}
+
+.icon{
+font-size:40px;
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-8px);}
+100%{transform:translateY(0px);}
+}
