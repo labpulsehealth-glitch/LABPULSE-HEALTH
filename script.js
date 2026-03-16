@@ -146,8 +146,12 @@ info="Digital lab reports allow patients to safely store and access their medica
 }
 
 let box = document.getElementById("testInfo");
-box.innerText = info;
-box.classList.add("show");
-document.querySelector(".ai-box").scrollIntoView({behavior:"smooth"});
 
+box.innerText = info;
+
+box.classList.remove("show");
+
+setTimeout(function(){
+box.classList.add("show");
+},10);
 }
