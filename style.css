@@ -153,3 +153,67 @@ animation:float 3s ease-in-out infinite;
 50%{transform:translateY(-8px);}
 100%{transform:translateY(0px);}
 }
+/* Lab equipment animations */
+
+.tube{
+animation:bubble 2s infinite;
+}
+
+@keyframes bubble{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+
+.microscope{
+animation:tilt 3s infinite;
+}
+
+@keyframes tilt{
+0%{transform:rotate(0deg);}
+50%{transform:rotate(5deg);}
+100%{transform:rotate(0deg);}
+}
+
+
+.petri{
+animation:spin 6s linear infinite;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+
+.syringe{
+animation:inject 2s infinite;
+}
+
+@keyframes inject{
+0%{transform:translateY(0);}
+50%{transform:translateY(6px);}
+100%{transform:translateY(0);}
+}
+
+
+.dna{
+animation:rotateDNA 5s linear infinite;
+}
+
+@keyframes rotateDNA{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+
+.report{
+animation:floatReport 3s infinite;
+}
+
+@keyframes floatReport{
+0%{transform:translateY(0);}
+50%{transform:translateY(-6px);}
+100%{transform:translateY(0);}
+  }
