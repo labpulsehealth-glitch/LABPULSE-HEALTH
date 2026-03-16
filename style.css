@@ -216,20 +216,18 @@ animation:floatReport 3s infinite;
 0%{transform:translateY(0);}
 50%{transform:translateY(-6px);}
 100%{transform:translateY(0);}
-  }
+}
 .info-box{
-background:white;
-padding:20px;
-margin:20px auto;
-max-width:600px;
+background:#f7ffff;
+padding:25px;
+margin:30px auto;
+max-width:650px;
 border-radius:12px;
-box-shadow:0 6px 15px rgba(0,0,0,0.15);
-font-size:16px;
+border-left:5px solid #004c4c;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+font-size:17px;
+line-height:1.6;
 opacity:0;
 transform:translateY(20px);
 transition:all 0.4s ease;
-  }
-.info-box.show{
-opacity:1;
-transform:translateY(0);
-  }
+}
