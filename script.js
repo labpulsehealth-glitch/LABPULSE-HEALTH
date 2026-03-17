@@ -135,25 +135,14 @@ function showTestInfo(type) {
       break;
   }
 
-  // Set popup content
+// POPUP FUNCTIONS
+function openPopup(title, text, icon){
   document.getElementById("popupTitle").innerText = title;
   document.getElementById("popupText").innerText = text;
   document.getElementById("popupIcon").innerText = icon;
-
-  // Show popup
-  let popup = document.getElementById("popup");
-  popup.style.display = "flex";
-
-  // Fade-in animation
-  setTimeout(function() {
-    popup.classList.add("show");
-  }, 10);
+  document.getElementById("popup").style.display = "flex";
 }
 
-function closePopup() {
-  let popup = document.getElementById("popup");
-  popup.classList.remove("show");
-  setTimeout(function() {
-    popup.style.display = "none";
-  }, 400); // match CSS transition
-                          }
+function closePopup(){
+  document.getElementById("popup").style.display = "none";
+}
